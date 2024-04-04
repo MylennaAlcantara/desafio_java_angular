@@ -1,0 +1,55 @@
+<app-modal-veiculo *ngIf="showModal"></app-modal-veiculo>
+<app-modal-peca *ngIf="showModalPeca"></app-modal-peca>
+
+<div class="div-container">
+    <h2>Cadastrar Vínculo</h2>
+    <form>
+        <div class="div-peca-veiculo">
+            <div class="div-input">
+                <label>Peça </label>
+                <button (click)="onHandleClickPeca()">Buscar</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Montadora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{peca.codigo}}</td>
+                        <td>{{peca.descricao}}</td>
+                        <td>{{peca.montadora}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="div-peca-veiculo">
+            <div class="div-input">
+                <label>Veiculo </label>
+                <button (click)="onHandleClickVeiculo()">Buscar</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Modelo</th>
+                        <th>Data Inicial</th>
+                        <th>Data Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let veiculo of vinculo.veiculos">
+                        <td>{{veiculo.nome_veiculo}}</td>
+                        <td>{{veiculo.modelo}}</td>
+                        <td>{{veiculo.anoInicial}}</td>
+                        <td>{{veiculo.anoFinal}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <button type="button" (click)="onSubmit()">Salvar</button>
+</div>

@@ -1,0 +1,45 @@
+.div-modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    z-index: 100;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-modal .div-container{
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    overflow: auto;
+}
+
+.div-modal .div-container table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid grey;
+}
+
+.div-modal .div-container table thead th{
+    font-size: 15px;
+    font-weight: bold;
+    color: #373435;    
+    background-color: #ffffff;
+    border: 1px solid grey;
+    white-space: nowrap;
+    position: sticky;
+    top: 0px;
+}
+
+.div-modal .div-container table tbody td{
+    white-space: nowrap;
+    border: 1px solid grey;
+}
+
+.div-modal .div-container table tbody tr:hover td{
+    background-color: #007bff;
+    cursor: pointer;
+}

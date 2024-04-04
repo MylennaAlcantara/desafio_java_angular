@@ -1,0 +1,20 @@
+<form (submit)="onSubmit()">
+    <h2>Cadastrar Veículo</h2>
+    <div class="div-input">
+        <label>Nome: </label>
+        <input type="text" [(ngModel)]="veiculo.nome_veiculo" name="nome_veiculo"/>
+    </div>
+    <div class="div-input">
+        <label>Modelo: </label>
+        <input type="text" [(ngModel)]="veiculo.modelo" name="modelo"/>
+    </div>
+    <div class="div-input">
+        <label>Data: </label>
+        <div class="div-data">
+            <input type="date" [(ngModel)]="veiculo.anoInicial" name="anoInicial"/>
+            <span> / </span>
+            <input type="date"  [(ngModel)]="veiculo.anoFinal" name="anoFinal"/>
+        </div>
+    </div>
+    <button type="submit">Salvar</button>
+</form>

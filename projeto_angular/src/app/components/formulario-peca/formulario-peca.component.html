@@ -1,0 +1,16 @@
+<form (submit)="onSubmit()">
+    <h2>Cadastrar Peça</h2>
+    <div class="div-input">
+        <label>Código: </label>
+        <input type="text" [(ngModel)]="peca.codigo" name="codigo" />
+    </div>
+    <div class="div-input">
+        <label>Descrição: </label>
+        <input type="text" [(ngModel)]="peca.descricao" name="descricao" />
+    </div>
+    <div class="div-input">
+        <label>Montadora: </label>
+        <input type="text" [(ngModel)]="peca.montadora" name="montadora" />
+    </div>
+    <button type="submit">Salvar</button>
+</form>

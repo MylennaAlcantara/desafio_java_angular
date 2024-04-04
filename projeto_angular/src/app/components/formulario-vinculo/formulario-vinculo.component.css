@@ -1,0 +1,85 @@
+.div-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin: 10px;
+    width: 95%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(177, 176, 176);
+}
+
+form h2 {
+    margin: 10px auto;
+}
+
+form .div-peca-veiculo {
+    margin: 5px auto;
+    width: 40%;
+    height: 80%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 10px;
+    overflow: auto;
+}
+
+form .div-peca-veiculo .div-input {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+form .div-peca-veiculo .div-input .div-data {
+    display: flex;
+}
+
+form .div-peca-veiculo .div-input .div-data span {
+    margin: 0px 5px;
+    font-size: 40px;
+}
+
+form .div-peca-veiculo .div-input input {
+    height: 35px;
+    width: 100%;
+}
+
+form .div-peca-veiculo table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid grey;
+}
+
+form .div-peca-veiculo table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #373435;
+    background-color: #ffffff;
+    border: 1px solid grey;
+    white-space: nowrap;
+}
+
+form .div-peca-veiculo table tbody td {
+    white-space: nowrap;
+    border: 1px solid grey;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}

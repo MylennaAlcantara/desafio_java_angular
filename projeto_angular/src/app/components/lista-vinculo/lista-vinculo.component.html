@@ -1,0 +1,23 @@
+<div class="container">
+    <button type="button" (click)="criarNovoVinculo()">+ Novo</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Montadora</th>
+                <th>Nome Veiculo</th>
+                <th>Modelo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vinculo of vinculos">
+                <td>{{vinculo.codigoPeca}}</td>
+                <td>{{vinculo.descricaoPeca}}</td>
+                <td>{{vinculo.montadora}}</td>
+                <td>{{vinculo.nomeVeiculo}}</td>
+                <td>{{vinculo.modelo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

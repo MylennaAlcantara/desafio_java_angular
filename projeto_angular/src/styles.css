@@ -1,0 +1,39 @@
+* {
+    font-family: 'Tahoma';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url('assets/fonts/Tahoma\ Regular\ font.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url('assets/fonts/TAHOMA_0.TTF') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url('assets/fonts/TAHOMAB0.TTF') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url('assets/fonts/TAHOMABD.TTF') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

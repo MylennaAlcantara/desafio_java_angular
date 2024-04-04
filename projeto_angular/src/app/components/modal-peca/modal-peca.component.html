@@ -1,0 +1,18 @@
+<div class="div-modal">
+    <div class="div-container">
+        <table>
+            <thead>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Montadora</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let peca of pecas" (dblclick)="onRowDoubleClick(peca)">
+                    <td>{{peca.codigo}}</td>
+                    <td>{{peca.descricao}}</td>
+                    <td>{{peca.montadora}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

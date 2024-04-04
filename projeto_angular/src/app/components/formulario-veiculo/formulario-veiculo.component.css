@@ -1,0 +1,42 @@
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form .div-input{
+    margin-bottom: 15px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+form .div-input .div-data{
+    display: flex;
+}
+
+form .div-input .div-data span{
+    margin: 0px 5px;
+    font-size: 40px;
+}
+
+form .div-input input{
+    height: 35px;
+    width: 100%;
+}
+
+
+button{
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}

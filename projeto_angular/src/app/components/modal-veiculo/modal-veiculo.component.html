@@ -1,0 +1,18 @@
+<div class="div-modal">
+    <div class="div-container">
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Modelo</th>
+                <th>Data</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let veiculo of veiculos" (dblclick)="onRowDoubleClick(veiculo)">
+                    <td>{{veiculo.nome_veiculo}}</td>
+                    <td>{{veiculo.modelo}}</td>
+                    <td>{{veiculo.anoInicial}} / {{veiculo.anoFinal}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
